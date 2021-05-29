@@ -1,0 +1,32 @@
+/* General */
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.hero {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Numbers */
+table {
+  border: 0.1rem solid black;
+  border-spacing: 1rem;
+}
+
+/* Media Queries */
+@media only screen and (min-device-width: 400px) {
+  table {
+    max-width: 300px;
+  }
+}
