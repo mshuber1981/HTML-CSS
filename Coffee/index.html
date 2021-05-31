@@ -18,29 +18,44 @@
   </head>
   <body>
     <header>
-      <img id="logo" src="./images/logo.png" alt="Coffee Addict Logo" />
-      <h1>Coffee Addict</h1>
+      <img
+        id="logo"
+        src="./images/logo.png"
+        alt="Coffee Addict Logo"
+        tabindex="0"
+      />
+      <h1 tabindex="0" aria-label="Welcome to Coffee Addict">Coffee Addict</h1>
+      <a class="hidden" href="#main">Skip navigation</a>
       <!-- Navigation -->
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="numbers.html">Numbers</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main id="main">
       <!-- Hero Image -->
-      <img class="hero" src="./images/background.jpeg" alt="Coffee Beans" />
+      <img
+        class="hero"
+        src="./images/background.jpeg"
+        alt="Coffee Beans"
+        tabindex="0"
+      />
       <br />
-      <h2>Featured Products</h2>
+      <h2 tabindex="0">Featured Products</h2>
       <br />
       <!-- House Blend -->
       <section>
-        <h3>House Blend</h3>
-        <img src="./images/house-blend.jpeg" alt="House Blend" />
-        <p>
+        <h3 tabindex="0">House Blend</h3>
+        <img
+          src="./images/house-blend.jpeg"
+          alt="House Blend Coffee"
+          tabindex="0"
+        />
+        <p tabindex="0">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quisquam
           error fuga iusto eaque libero facilis amet in excepturi a quibusdam
           recusandae atque provident facere ex temporibus earum officiis
@@ -61,9 +76,13 @@
 
       <!-- French Roast -->
       <section>
-        <h3>French Roast</h3>
-        <img src="./images/french-roast.jpeg" alt="French Roast" />
-        <p>
+        <h3 tabindex="0">French Roast</h3>
+        <img
+          src="./images/french-roast.jpeg"
+          alt="French Roast Coffee"
+          tabindex="0"
+        />
+        <p tabindex="0">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quisquam
           error fuga iusto eaque libero facilis amet in excepturi a quibusdam
           recusandae atque provident facere ex temporibus earum officiis
@@ -84,9 +103,13 @@
 
       <!-- Columbian Roast -->
       <section>
-        <h3>Columbian Roast</h3>
-        <img src="./images/columbian-roast.jpeg" alt="Columbian Roast" />
-        <p>
+        <h3 tabindex="0">Columbian Roast</h3>
+        <img
+          src="./images/columbian-roast.jpeg"
+          alt="Columbian Roast Coffee"
+          tabindex="0"
+        />
+        <p tabindex="0">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quisquam
           error fuga iusto eaque libero facilis amet in excepturi a quibusdam
           recusandae atque provident facere ex temporibus earum officiis
@@ -113,7 +136,7 @@
     <br />
     <br />
     <footer>
-      <p>Copyright &copy; 2021</p>
+      <p tabindex="0"><span aria-hidden="true">Copyright</span> &copy; 2021</p>
       <h3><a href="#logo">Back To Top</a></h3>
     </footer>
   </body>

@@ -28,6 +28,21 @@ img {
   flex-direction: column;
 }
 
+/* Accessibility */
+nav ul li a[aria-current="page"] {
+  font-weight: bold;
+  color: #8a624a;
+}
+
+.hidden {
+  position: absolute;
+  right: 4000px;
+}
+
+.hidden:focus {
+  position: static;
+}
+
 /* Numbers */
 table {
   border: 0.1rem solid black;
