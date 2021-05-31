@@ -1,4 +1,14 @@
 /* General */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   max-width: 1920px;
   margin: 0 auto;
@@ -28,5 +38,8 @@ table {
 @media only screen and (min-device-width: 400px) {
   table {
     max-width: 300px;
+  }
+  p {
+    max-width: 50%;
   }
 }
