@@ -29,6 +29,10 @@ img {
 }
 
 /* Accessibility */
+*:focus {
+  outline: 4px solid green;
+}
+
 nav ul li a[aria-current="page"] {
   font-weight: bold;
   color: #8a624a;
