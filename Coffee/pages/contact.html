@@ -61,22 +61,17 @@
         <br />
         <form>
           <!-- Name -->
-          <label for="name">Name</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            aria-label="Please provide your name"
-          />
+          <label for="name">Name <span aria-hidden="true">*</span></label>
+          <input type="text" name="name" id="name" required />
           <br />
           <br />
           <!-- Email -->
-          <label for="email">email</label>
-          <input type="email" name="email" id="email" />
+          <label for="email">email <span aria-hidden="true">*</span></label>
+          <input type="email" name="email" id="email" required />
           <br />
           <br />
           <!-- Message -->
-          <label for="message">Message</label>
+          <label for="message">Message <span aria-hidden="true">*</span></label>
           <br />
           <br />
           <textarea
@@ -85,6 +80,7 @@
             cols="30"
             rows="10"
             placeholder="Your Message"
+            required
           ></textarea>
           <br />
           <br />

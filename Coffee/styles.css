@@ -47,6 +47,10 @@ nav ul li a[aria-current="page"] {
   position: static;
 }
 
+form span {
+  color: red;
+}
+
 /* Numbers */
 table {
   border: 0.1rem solid black;
