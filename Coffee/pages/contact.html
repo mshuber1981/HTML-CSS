@@ -29,13 +29,8 @@
   </head>
   <body>
     <header>
-      <img
-        id="logo"
-        src="../images/logo.png"
-        alt="Coffee Addict Logo"
-        tabindex="0"
-      />
-      <h1 tabindex="0">Contact</h1>
+      <img id="logo" src="../images/logo.png" alt="Coffee Addict Logo" />
+      <h1 aria-label="Contact us">Contact</h1>
       <a class="hidden" href="#main">Skip navigation</a>
       <!-- Navigation -->
       <nav>
@@ -49,30 +44,20 @@
     </header>
     <main id="main">
       <!-- Hero Image -->
-      <img
-        class="hero"
-        src="../images/background.jpeg"
-        alt="Coffee Beans"
-        tabindex="0"
-      />
-      <br />
+      <img class="hero" src="../images/background.jpeg" alt="Coffee Beans" />
       <section>
-        <h2 tabindex="0">Contact Us</h2>
-        <br />
+        <h2 aria-label="Contact Form" tabindex="0">Contact Us</h2>
         <form>
           <!-- Name -->
           <label for="name">Name <span aria-hidden="true">*</span></label>
           <input type="text" name="name" id="name" required />
           <br />
-          <br />
           <!-- Email -->
-          <label for="email">email <span aria-hidden="true">*</span></label>
+          <label for="email">Email <span aria-hidden="true">*</span></label>
           <input type="email" name="email" id="email" required />
-          <br />
           <br />
           <!-- Message -->
           <label for="message">Message <span aria-hidden="true">*</span></label>
-          <br />
           <br />
           <textarea
             name="message"
@@ -83,20 +68,12 @@
             required
           ></textarea>
           <br />
-          <br />
           <button type="submit">Submit</button>
         </form>
       </section>
     </main>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
     <footer>
-      <p tabindex="0"><span aria-hidden="true">Copyright</span> &copy; 2021</p>
+      <p><span aria-hidden="true">Copyright</span> &copy; 2021</p>
       <h3><a href="#logo">Back To Top</a></h3>
     </footer>
   </body>

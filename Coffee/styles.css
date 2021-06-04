@@ -15,12 +15,17 @@ body {
   padding: 0 1rem;
 }
 
+main {
+  margin-bottom: 5rem;
+}
+
 img {
   max-width: 100%;
 }
 
 .hero {
   width: 100%;
+  margin-bottom: 2rem;
 }
 
 .container {
@@ -55,6 +60,12 @@ form span {
 table {
   border: 0.1rem solid black;
   border-spacing: 1rem;
+}
+
+/* Contact */
+input,
+textarea {
+  margin: 0.5rem 0;
 }
 
 /* Media Queries */
