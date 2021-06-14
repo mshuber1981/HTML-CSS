@@ -1,0 +1,19 @@
+{
+    "name": "Tea Station",
+    "short_name": "Tea Station",
+    "icons": [
+        {
+            "src": "/images/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/android-chrome-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#c8f0a1",
+    "background_color": "#c8f0a1",
+    "display": "standalone"
+}
