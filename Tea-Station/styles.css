@@ -111,6 +111,35 @@ p {
   clear: both;
 }
 
+@media screen and (min-width: 800px) {
+  body {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
 /* 
 =============
 Header
@@ -168,7 +197,7 @@ header {
 
 /* 
 =============
-Header
+Skills
 =============
 */
 .skills {
@@ -204,44 +233,10 @@ Header
   transform: translateY(-5px);
 }
 
-/* 
-=============
-Media Queries
-=============
-*/
 @media screen and (min-width: 576px) {
   .skill {
     float: left;
     width: 50%;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  body {
-    font-size: 1rem;
-  }
-
-  h1 {
-    font-size: 4rem;
-  }
-
-  h2 {
-    font-size: 2.5rem;
-  }
-
-  h3 {
-    font-size: 2rem;
-  }
-
-  h4 {
-    font-size: 1rem;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1;
   }
 }
 
