@@ -208,6 +208,17 @@ Navbar
   justify-self: end;
 }
 
+.navbar-fixed {
+  /* Fixed Navbar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: var(--clr-white);
+  z-index: 2;
+  box-shadow: var(--light-shadow);
+}
+
 @media screen and (min-width: 768px) {
   .nav {
     background: var(--clr-primary-10);
