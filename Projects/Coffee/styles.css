@@ -1,0 +1,79 @@
+/* General */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  margin-bottom: 5rem;
+}
+
+.hero {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Accessibility */
+*:focus {
+  outline: 4px solid green;
+}
+
+nav ul li a[aria-current="page"] {
+  font-weight: bold;
+  color: #8a624a;
+}
+
+.hidden {
+  position: absolute;
+  right: 4000px;
+}
+
+.hidden:focus {
+  position: static;
+}
+
+form span {
+  color: red;
+}
+
+/* Numbers */
+table {
+  border: 0.1rem solid black;
+  border-spacing: 1rem;
+}
+
+/* Contact */
+input,
+textarea {
+  margin: 0.5rem 0;
+}
+
+/* Media Queries */
+@media only screen and (min-device-width: 400px) {
+  table {
+    max-width: 300px;
+  }
+  p {
+    max-width: 50%;
+  }
+}
