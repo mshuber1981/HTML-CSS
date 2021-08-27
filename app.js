@@ -6,7 +6,7 @@ const sidebar = document.querySelector("#sidebar");
 const date = document.querySelector("#date");
 
 // Set year
-// date.innerHTML = new Date().getFullYear();
+date.innerHTML = new Date().getFullYear();
 
 /* Event Listeners */
 window.addEventListener("scroll", function () {
