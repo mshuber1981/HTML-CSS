@@ -953,3 +953,31 @@ Footer
   font-size: 1.25rem;
   text-transform: capitalize;
 }
+
+/*
+=============== 
+Pages
+===============
+*/
+.single-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--clr-primary-10);
+  min-height: calc(100vh - 5rem - 198px);
+}
+
+.page-info {
+  max-width: 700px;
+}
+
+.page-info a {
+  text-transform: uppercase;
+  color: var(--clr-primary-5);
+  transition: var(--transition);
+}
+
+.page-info a:hover {
+  color: var(--clr-primary-1);
+}
