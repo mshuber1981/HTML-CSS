@@ -6,7 +6,7 @@ const date = (document.getElementById("date").innerHTML =
   new Date().getFullYear());
 
 /* Functions */
-function scrollTo() {
+function scrollTo(e) {
   document.querySelector("#target").scrollIntoView({ behavior: "smooth" });
 } // Smooth scroll to #ID
 

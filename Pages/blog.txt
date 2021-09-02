@@ -1,0 +1,106 @@
+<!-- Blog -->
+<div class="section blog">
+  <div class="section-title">
+    <h2>Blog</h2>
+    <div class="underline"></div>
+  </div>
+  <div class="section-center blog-center">
+    <!-- Card 1 -->
+    <div class="card">
+      <!-- Front -->
+      <div class="card-side card-front">
+        <img src="./Media/project-1.jpeg" alt="" />
+        <div class="card-info">
+          <h4>Article Title</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+            beatae voluptates. Hic accusantium iste laboriosam alias et voluptas
+            ratione cumque?
+          </p>
+          <div class="card-footer">
+            <img src="./Media/hero-img-small.jpeg" alt="" />
+            <p>7 Minute Read</p>
+          </div>
+        </div>
+      </div>
+      <!-- Back -->
+      <div class="card-side card-back">
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+    <!-- End Card 1 -->
+    <!-- Card 2 -->
+    <div class="card">
+      <!-- Front -->
+      <div class="card-side card-front">
+        <img src="./Media/project-2.jpeg" alt="" />
+        <div class="card-info">
+          <h4>Article Title</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+            beatae voluptates. Hic accusantium iste laboriosam alias et voluptas
+            ratione cumque?
+          </p>
+          <div class="card-footer">
+            <img src="./Media/hero-img-small.jpeg" alt="" />
+            <p>7 Minute Read</p>
+          </div>
+        </div>
+      </div>
+      <!-- Back -->
+      <div class="card-side card-back">
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+    <!-- End Card 2 -->
+    <!-- Card 3 -->
+    <div class="card">
+      <!-- Front -->
+      <div class="card-side card-front">
+        <img src="./Media/project-3.jpeg" alt="" />
+        <div class="card-info">
+          <h4>Article Title</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+            beatae voluptates. Hic accusantium iste laboriosam alias et voluptas
+            ratione cumque?
+          </p>
+          <div class="card-footer">
+            <img src="./Media/hero-img-small.jpeg" alt="" />
+            <p>7 Minute Read</p>
+          </div>
+        </div>
+      </div>
+      <!-- Back -->
+      <div class="card-side card-back">
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+    <!-- End Card 3 -->
+    <!-- Card 4 -->
+    <div class="card">
+      <!-- Front -->
+      <div class="card-side card-front">
+        <img src="./Media/project-4.jpeg" alt="" />
+        <div class="card-info">
+          <h4>Article Title</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+            beatae voluptates. Hic accusantium iste laboriosam alias et voluptas
+            ratione cumque?
+          </p>
+          <div class="card-footer">
+            <img src="./Media/hero-img-small.jpeg" alt="" />
+            <p>7 Minute Read</p>
+          </div>
+        </div>
+      </div>
+      <!-- Back -->
+      <div class="card-side card-back">
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+    <!-- End Card 4 -->
+  </div>
+</div>
+<!-- End Blog -->

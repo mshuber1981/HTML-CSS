@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS -->
-    <link rel="stylesheet" href="fontawesome-free-5.12.1-web/css/all.min.css" />
+    <link rel="stylesheet" href="./CSS/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="./CSS/fontawesome-free-5.15.4-web/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Michael Huber | Home</title>
   </head>
@@ -13,16 +17,16 @@
     <nav class="nav" id="nav">
       <div class="nav-center">
         <div class="nav-header">
-          <img src="./Portfolio-media/logo.svg" alt="Logo" class="nav-logo" />
+          <img src="./Media/logo.svg" alt="Logo" class="nav-logo" />
           <button class="nav-btn" id="nav-btn">
             <i class="fas fa-bars"></i>
           </button>
         </div>
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#home" class="scroll-link">Home</a></li>
+          <li><a href="#about" class="scroll-link">About</a></li>
+          <li><a href="#projects" class="scroll-link">Projects</a></li>
+          <li><a href="#contact" class="scroll-link">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -33,95 +37,66 @@
           <i class="fas fa-times"></i>
         </button>
         <ul class="sidebar-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#home" class="scroll-link">Home</a></li>
+          <li><a href="#about" class="scroll-link">About</a></li>
+          <li><a href="#projects" class="scroll-link">Projects</a></li>
+          <li><a href="#contact" class="scroll-link">Contact</a></li>
         </ul>
         <!-- Social Icons -->
         <ul class="social-icons">
           <li>
-            <a href="https://facebook.com" class="social-icon">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://linkedin.com" class="social-icon">
+            <a
+              href="https://www.linkedin.com/in/mikeyhuber/"
+              class="social-icon"
+            >
               <i class="fab fa-linkedin"></i>
             </a>
           </li>
           <li>
-            <a href="https://squarespace" class="social-icon">
-              <i class="fab fa-squarespace"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://behance.net" class="social-icon">
-              <i class="fab fa-behance"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://instagram.com" class="social-icon">
-              <i class="fab fa-instagram"></i>
+            <a href="https://github.com/mshuber1981" class="social-icon">
+              <i class="fab fa-github"></i>
             </a>
           </li>
         </ul>
       </div>
     </aside>
     <!-- End Sidebar -->
-    <header class="hero">
+    <header id="home" class="hero scroll-spy">
       <div class="section-center hero-center">
-        <article class="hero-info">
+        <article class="hero-info item1">
+          <h1>I am Mike</h1>
           <div class="underline"></div>
-          <h1>I am John</h1>
-          <h4>Freelance Web Developer</h4>
-          <a href="contact.html" class="btn hero-btn">Hire Me</a>
+          <h4>JavaScript Developer</h4>
+          <a href="./Pages/contact.html" class="btn hero-btn">Hire Me</a>
           <ul class="social-icons hero-icons">
             <li>
-              <a href="https://facebook.com" class="social-icon">
-                <i class="fab fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://linkedin.com" class="social-icon">
+              <a
+                href="https://www.linkedin.com/in/mikeyhuber/"
+                class="social-icon"
+              >
                 <i class="fab fa-linkedin"></i>
               </a>
             </li>
             <li>
-              <a href="https://squarespace" class="social-icon">
-                <i class="fab fa-squarespace"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://behance.net" class="social-icon">
-                <i class="fab fa-behance"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://instagram.com" class="social-icon">
-                <i class="fab fa-instagram"></i>
+              <a href="https://github.com/mshuber1981" class="social-icon">
+                <i class="fab fa-github"></i>
               </a>
             </li>
           </ul>
         </article>
-        <article class="hero-img">
-          <img
-            src="./Portfolio-media/hero-img.jpeg"
-            alt="John Doe"
-            class="hero-photo"
-          />
+        <article class="hero-img item2">
+          <img src="./Media/avatar.svg" alt="John Doe" class="hero-photo" />
         </article>
+        <a href="#about" class="social-icon scroll-icon scroll-link item3">
+          <i class="fas fa-chevron-circle-down"></i>
+        </a>
       </div>
     </header>
     <!-- About -->
-    <section class="section about">
+    <section id="about" class="section about scroll-spy">
       <div class="section-center about-center">
         <article class="about-img">
-          <img
-            src="./Portfolio-media/about-img.jpeg"
-            alt="About me"
-            class="hero-photo"
-          />
+          <img src="./Media/about-img.jpeg" alt="About me" class="hero-photo" />
         </article>
         <article class="about-info">
           <div class="section-title about-title">
@@ -148,7 +123,7 @@
     </section>
     <!-- End About -->
     <!-- Services -->
-    <section class="section bg-grey">
+    <section id="services" class="section bg-grey">
       <div class="section-title">
         <h2>Services</h2>
         <div class="underline"></div>
@@ -193,114 +168,8 @@
       </div>
     </section>
     <!-- End Services -->
-    <!-- Projects -->
-    <section class="section projects">
-      <div class="section-title">
-        <h2>Projects</h2>
-        <div class="underline"></div>
-        <p class="projects-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Exercitationem eligendi vero architecto, culpa repellat facilis libero
-          maxime ipsa sunt, quam illum omnis laborum aperiam suscipit! Delectus
-          sapiente ut cumque voluptatum, unde optio aut? Labore quam, aspernatur
-          laborum quasi assumenda expedita?
-        </p>
-      </div>
-      <div class="section-center projects-center">
-        <!-- Project 1 -->
-        <a href="projects.html" class="project-1">
-          <article class="project">
-            <img
-              src="./Portfolio-media/project-1.jpeg"
-              alt="Project 1"
-              class="project-img"
-            />
-            <div class="project-info">
-              <h4 id="project-title">Project Title</h4>
-              <p>Client Name</p>
-            </div>
-          </article>
-        </a>
-        <!-- End Project 1 -->
-        <!-- Project 2 -->
-        <a href="projects.html" class="project-2">
-          <article class="project">
-            <img
-              src="./Portfolio-media/project-2.jpeg"
-              alt="Project 2"
-              class="project-img"
-            />
-            <div class="project-info">
-              <h4>Project Title</h4>
-              <p>Client Name</p>
-            </div>
-          </article>
-        </a>
-        <!-- End Project 2 -->
-        <!-- Project 3 -->
-        <a href="projects.html" class="project-3">
-          <article class="project">
-            <img
-              src="./Portfolio-media/project-3.jpeg"
-              alt="Project 3"
-              class="project-img"
-            />
-            <div class="project-info">
-              <h4>Project Title</h4>
-              <p>Client Name</p>
-            </div>
-          </article>
-        </a>
-        <!-- End Project 3 -->
-        <!-- Project 4 -->
-        <a href="projects.html" class="project-4">
-          <article class="project">
-            <img
-              src="./Portfolio-media/project-4.jpeg"
-              alt="Project 4"
-              class="project-img"
-            />
-            <div class="project-info">
-              <h4>Project Title</h4>
-              <p>Client Name</p>
-            </div>
-          </article>
-        </a>
-        <!-- End Project 4 -->
-      </div>
-    </section>
-    <!-- End Projects -->
-    <!-- Contact -->
-    <section class="connect">
-      <video
-        controls
-        autoplay
-        muted
-        loop
-        class="video-container"
-        poster="./Portfolio-media/project-1.jpeg"
-      >
-        <source src="Portfolio-media/connect.mp4" type="video/mp4" />
-        Sorry! Your browser does not support embedded videos...
-      </video>
-      <div class="video-banner">
-        <div class="section-title">
-          <h2>Contact me</h2>
-          <div class="underline"></div>
-        </div>
-        <p class="video-text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
-          veritatis tempora alias est commodi corporis, consequatur ea
-          praesentium voluptatum at ipsa. Veritatis ea aliquid cumque nemo
-          ratione aliquam, sequi dolorum velit cum, nesciunt ipsum totam
-          repudiandae beatae assumenda maiores quia?
-        </p>
-        <a href="contact.html" class="btn">Contact Me</a>
-      </div>
-    </section>
-    <!-- End Contact -->
     <!-- Skills -->
-    <section class="section skills">
+    <section id="skills" class="section skills">
       <div class="section-title">
         <h2>Skills</h2>
         <div class="underline"></div>
@@ -370,9 +239,9 @@
     </section>
     <!-- End Skills -->
     <!-- Timeline -->
-    <section class="section timeline">
+    <section id="timeline" class="section timeline">
       <div class="section-title">
-        <h2>Timeline</h2>
+        <h2>My Story</h2>
         <div class="underline"></div>
       </div>
       <div class="section-center timeline-center">
@@ -445,142 +314,129 @@
       </div>
     </section>
     <!-- End Timeline -->
-    <!-- Blog -->
-    <div class="section blog">
-      <div class="section-title">
-        <h2>Blog</h2>
+    <!-- Projects -->
+    <section id="projects" class="section scroll-spy">
+      <div class="section-title projects-title">
+        <h2>Projects</h2>
         <div class="underline"></div>
+        <p class="projects-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Exercitationem eligendi vero architecto, culpa repellat facilis libero
+          maxime ipsa sunt, quam illum omnis laborum aperiam suscipit! Delectus
+          sapiente ut cumque voluptatum, unde optio aut? Labore quam, aspernatur
+          laborum quasi assumenda expedita?
+        </p>
       </div>
-      <div class="section-center blog-center">
-        <!-- Card 1 -->
-        <div class="card">
-          <!-- Front -->
-          <div class="card-side card-front">
-            <img src="./Portfolio-media/project-1.jpeg" alt="" />
-            <div class="card-info">
-              <h4>Article Title</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eveniet, beatae voluptates. Hic accusantium iste laboriosam
-                alias et voluptas ratione cumque?
-              </p>
-              <div class="card-footer">
-                <img src="./Portfolio-media/hero-img-small.jpeg" alt="" />
-                <p>7 Minute Read</p>
-              </div>
+      <div class="section-center projects-center">
+        <!-- Project 1 -->
+        <a href="projects.html" class="project-1">
+          <article class="project">
+            <img
+              src="./Media/project-1.jpeg"
+              alt="Project 1"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h4 id="project-title">Project Title</h4>
+              <p>Client Name</p>
             </div>
-          </div>
-          <!-- Back -->
-          <div class="card-side card-back">
-            <button class="btn">Read More</button>
-          </div>
-        </div>
-        <!-- End Card 1 -->
-        <!-- Card 2 -->
-        <div class="card">
-          <!-- Front -->
-          <div class="card-side card-front">
-            <img src="./Portfolio-media/project-2.jpeg" alt="" />
-            <div class="card-info">
-              <h4>Article Title</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eveniet, beatae voluptates. Hic accusantium iste laboriosam
-                alias et voluptas ratione cumque?
-              </p>
-              <div class="card-footer">
-                <img src="./Portfolio-media/hero-img-small.jpeg" alt="" />
-                <p>7 Minute Read</p>
-              </div>
+          </article>
+        </a>
+        <!-- End Project 1 -->
+        <!-- Project 2 -->
+        <a href="projects.html" class="project-2">
+          <article class="project">
+            <img
+              src="./Media/project-2.jpeg"
+              alt="Project 2"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h4>Project Title</h4>
+              <p>Client Name</p>
             </div>
-          </div>
-          <!-- Back -->
-          <div class="card-side card-back">
-            <button class="btn">Read More</button>
-          </div>
-        </div>
-        <!-- End Card 2 -->
-        <!-- Card 3 -->
-        <div class="card">
-          <!-- Front -->
-          <div class="card-side card-front">
-            <img src="./Portfolio-media/project-3.jpeg" alt="" />
-            <div class="card-info">
-              <h4>Article Title</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eveniet, beatae voluptates. Hic accusantium iste laboriosam
-                alias et voluptas ratione cumque?
-              </p>
-              <div class="card-footer">
-                <img src="./Portfolio-media/hero-img-small.jpeg" alt="" />
-                <p>7 Minute Read</p>
-              </div>
+          </article>
+        </a>
+        <!-- End Project 2 -->
+        <!-- Project 3 -->
+        <a href="projects.html" class="project-3">
+          <article class="project">
+            <img
+              src="./Media/project-3.jpeg"
+              alt="Project 3"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h4>Project Title</h4>
+              <p>Client Name</p>
             </div>
-          </div>
-          <!-- Back -->
-          <div class="card-side card-back">
-            <button class="btn">Read More</button>
-          </div>
-        </div>
-        <!-- End Card 3 -->
-        <!-- Card 4 -->
-        <div class="card">
-          <!-- Front -->
-          <div class="card-side card-front">
-            <img src="./Portfolio-media/project-4.jpeg" alt="" />
-            <div class="card-info">
-              <h4>Article Title</h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eveniet, beatae voluptates. Hic accusantium iste laboriosam
-                alias et voluptas ratione cumque?
-              </p>
-              <div class="card-footer">
-                <img src="./Portfolio-media/hero-img-small.jpeg" alt="" />
-                <p>7 Minute Read</p>
-              </div>
+          </article>
+        </a>
+        <!-- End Project 3 -->
+        <!-- Project 4 -->
+        <a href="projects.html" class="project-4">
+          <article class="project">
+            <img
+              src="./Media/project-4.jpeg"
+              alt="Project 4"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h4>Project Title</h4>
+              <p>Client Name</p>
             </div>
-          </div>
-          <!-- Back -->
-          <div class="card-side card-back">
-            <button class="btn">Read More</button>
-          </div>
-        </div>
-        <!-- End Card 4 -->
+          </article>
+        </a>
+        <!-- End Project 4 -->
       </div>
-    </div>
-    <!-- End Blog -->
+    </section>
+    <!-- End Projects -->
+    <!-- Contact -->
+    <section id="contact" class="contact scroll-spy">
+      <video
+        controls
+        autoplay
+        muted
+        loop
+        class="video-container"
+        poster="./Media/project-1.jpeg"
+      >
+        <source src="Media/connect.mp4" type="video/mp4" />
+        Sorry! Your browser does not support embedded videos...
+      </video>
+      <div class="video-banner">
+        <div class="section-title">
+          <h2>Contact me</h2>
+          <div class="underline"></div>
+        </div>
+        <p class="video-text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
+          veritatis tempora alias est commodi corporis, consequatur ea
+          praesentium voluptatum at ipsa. Veritatis ea aliquid cumque nemo
+          ratione aliquam, sequi dolorum velit cum, nesciunt ipsum totam
+          repudiandae beatae assumenda maiores quia?
+        </p>
+        <a href="mailto:michael.huber1981@outlook.com" class="btn contact-btn"
+          >michael.huber1981@outlook.com</a
+        >
+      </div>
+    </section>
+    <!-- End Contact -->
     <footer class="footer">
       <!-- Social Icons -->
       <ul class="social-icons">
         <li>
-          <a href="https://facebook.com" class="social-icon">
-            <i class="fab fa-facebook"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://linkedin.com" class="social-icon">
+          <a href="https://www.linkedin.com/in/mikeyhuber/" class="social-icon">
             <i class="fab fa-linkedin"></i>
           </a>
         </li>
         <li>
-          <a href="https://squarespace" class="social-icon">
-            <i class="fab fa-squarespace"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://behance.net" class="social-icon">
-            <i class="fab fa-behance"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://instagram.com" class="social-icon">
-            <i class="fab fa-instagram"></i>
+          <a href="https://github.com/mshuber1981" class="social-icon">
+            <i class="fab fa-github"></i>
           </a>
         </li>
       </ul>
-      <p>&copy; <span id="date"></span> John Doe, All rights reserved</p>
+      <p>&copy; <span id="date"></span> Michael Huber, all rights reserved.</p>
     </footer>
     <script src="app.js"></script>
   </body>
