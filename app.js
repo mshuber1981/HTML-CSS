@@ -1,5 +1,10 @@
-/* Variables */
+/*
+=============== 
+Variables
+===============
+*/
 const navbar = document.querySelector("#nav");
+const navHeight = navbar.clientHeight;
 const navBtn = document.querySelector("#nav-btn");
 const closeBtn = document.querySelector("#close-btn");
 const scrollLinks = document.querySelectorAll(".scroll-link");
@@ -8,65 +13,98 @@ const date = document.querySelector("#date");
 const section = document.querySelectorAll(".scroll-spy");
 const sectionArray = Array.from(section);
 const sections = {};
+const smallOffsets = [-8, -4, -4, 2];
+const landscapeOffsets = [-6, -3, -1, 5];
+const desktopOffsets = [-6, -3.75, -3, -8];
+let vh, vw;
 
-document.onload = sectionArray.forEach(function (e) {
-  if (e.id === "home") {
-    sections[e.id] = e.offsetTop - convertRemToPixels(6);
-  } else if (e.id === "contact") {
-    sections[e.id] = e.offsetTop - convertRemToPixels(9);
-  } else {
-    sections[e.id] = e.offsetTop - convertRemToPixels(6);
-  }
-}); // Set sections offsets
-
-date.innerHTML = new Date().getFullYear(); // Set year
-
-/* Functions */
+/*
+=============== 
+Functions
+===============
+*/
 function convertRemToPixels(rem) {
   return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
 } // Covert Rem to pixels
 
-/* Event Listeners */
-window.addEventListener("resize", function () {
-  let vh = Math.max(
+function offsets(small, landscape, desktop) {
+  vw = Math.max(
+    document.documentElement.clientWidth || 0,
+    window.innerWidth || 0
+  );
+  vh = Math.max(
     document.documentElement.clientHeight || 0,
     window.innerHeight || 0
   );
-  console.log(vh);
 
-  if (vh <= 414) {
+  if (vw <= 414) {
     sectionArray.forEach(function (e) {
       if (e.id === "home") {
-        sections[e.id] = e.offsetTop - convertRemToPixels(6);
-      } else if (e.id === "contact") {
-        sections[e.id] = e.offsetTop + convertRemToPixels(6);
+        sections[e.id] = e.offsetTop + convertRemToPixels(small[0]);
+      } else if (e.id === "about") {
+        sections[e.id] = e.offsetTop + convertRemToPixels(small[1]);
+      } else if (e.id === "projects") {
+        sections[e.id] = e.offsetTop + convertRemToPixels(small[2]);
       } else {
-        sections[e.id] = e.offsetTop + convertRemToPixels(2.5);
+        sections[e.id] = e.offsetTop + convertRemToPixels(small[3]);
       }
-      console.log(sections);
+    });
+  } else if (vh <= 414) {
+    sectionArray.forEach(function (e) {
+      if (e.id === "home") {
+        sections[e.id] = e.offsetTop + convertRemToPixels(landscape[0]);
+      } else if (e.id === "about") {
+        sections[e.id] = e.offsetTop + convertRemToPixels(landscape[1]);
+      } else if (e.id === "projects") {
+        sections[e.id] = e.offsetTop + convertRemToPixels(landscape[2]);
+      } else {
+        sections[e.id] = e.offsetTop + convertRemToPixels(landscape[3]);
+      }
     });
   } else {
     sectionArray.forEach(function (e) {
       if (e.id === "home") {
-        sections[e.id] = e.offsetTop - convertRemToPixels(6);
-      } else if (e.id === "contact") {
-        sections[e.id] = e.offsetTop - convertRemToPixels(9);
+        sections[e.id] = e.offsetTop + convertRemToPixels(desktop[0]);
+      } else if (e.id === "about") {
+        sections[e.id] = e.offsetTop + convertRemToPixels(desktop[1]);
+      } else if (e.id === "projects") {
+        sections[e.id] = e.offsetTop + convertRemToPixels(desktop[2]);
       } else {
-        sections[e.id] = e.offsetTop - convertRemToPixels(6);
+        sections[e.id] = e.offsetTop + convertRemToPixels(desktop[3]);
       }
-      console.log(sections);
     });
   }
+} // scrollTo offsets
+
+/*
+=============== 
+Event Listeners
+===============
+*/
+window.addEventListener("load", function () {
+  offsets(smallOffsets, landscapeOffsets, desktopOffsets);
+}); // Update sections offsets on window load
+
+window.addEventListener("resize", function () {
+  offsets(smallOffsets, landscapeOffsets, desktopOffsets);
 }); // Update sections offsets on window resize
 
 window.addEventListener("scroll", function () {
   let scrollPosition =
     document.documentElement.scrollTop || document.body.scrollTop;
 
-  if (window.pageYOffset > 80) {
-    navbar.classList.add("navbar-fixed");
+  if (vw <= 768 || vh <= 414) {
+    if (window.pageYOffset > navHeight) {
+      navbar.classList.add("navbar-fixed");
+    } else {
+      navbar.classList.remove("navbar-fixed");
+    }
   } else {
-    navbar.classList.remove("navbar-fixed");
+    if (window.pageYOffset > vh - 2 * navHeight) {
+      navbar.classList.add("navbar-fixed");
+    } else {
+      navbar.classList.remove("navbar-fixed");
+    }
   }
 
   for (const i in sections) {
@@ -79,7 +117,7 @@ window.addEventListener("scroll", function () {
         .forEach((e) => e.classList.add("active"));
     }
   }
-}); // Fixed Navbar, update active links
+}); // Fixed Navbar after specified offsets, update active links
 
 navBtn.addEventListener("click", function () {
   sidebar.classList.add("show-sidebar");
@@ -110,3 +148,10 @@ scrollLinks.forEach((link) => {
     });
   });
 }); // Smooth scroll
+
+/*
+=============== 
+Script
+===============
+*/
+date.innerHTML = new Date().getFullYear(); // Set year
