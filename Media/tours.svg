@@ -1,0 +1,22 @@
+<svg width="110" height="110" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="#ffffff" id="canvas_background" height="112" width="112" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <circle id="svg_1" fill="#E04F5F" r="55" cy="55" cx="55"/>
+  <path id="svg_3" fill="#FFFFFF" d="m73,81c0,3.314 -2.686,6 -6,6l-24,0c-3.314,0 -6,-2.686 -6,-6l0,-52c0,-3.314 2.686,-6 6,-6l24,0c3.314,0 6,2.686 6,6l0,52z"/>
+  <polygon id="svg_4" fill="#4AC3AF" points="39,35 39,65.872 55.171,35   "/>
+  <polygon id="svg_5" fill="#21B2D1" points="39,74.491 39,75 68.24,75 47.208,58.822   "/>
+  <polygon id="svg_6" fill="#FBE158" points="59.686,35 48.621,56.124 71,73.338 71,35   "/>
+  <circle id="svg_7" fill="#B6BCBD" r="1" cy="30" cx="48"/>
+  <path id="svg_8" fill="#B6BCBD" d="m63,30c0,0.552 -0.448,1 -1,1l-10,0c-0.552,0 -1,-0.448 -1,-1s0.448,-1 1,-1l10,0c0.552,0 1,0.448 1,1z"/>
+  <circle id="svg_9" fill="#CFD3D4" r="4" cy="81" cx="55"/>
+  <rect id="svg_10" fill="#FFFFFF" y="79" x="53" width="4" height="4"/>
+  <polygon id="svg_11" fill="#F0F1F1" points="48.621,56.124 59.686,35 55.171,35 39,65.872 39,74.491 47.208,58.822 68.24,75 71,75     71,73.338   "/>
+  <path id="svg_12" fill="#DF2C2C" d="m68,46.5c0,3.59 -6.5,15.6 -6.5,15.6s-6.5,-12.01 -6.5,-15.6s2.91,-6.5 6.5,-6.5s6.5,2.91 6.5,6.5z"/>
+  <circle id="svg_13" fill="#FFFFFF" r="2.9" cy="46.5" cx="61.5"/>
+ </g>
+</svg>

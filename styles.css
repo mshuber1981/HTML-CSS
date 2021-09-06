@@ -348,7 +348,7 @@ Sidebar
 
 .close-btn {
   position: absolute;
-  top: 1rem;
+  top: 0;
   right: 1rem;
   font-size: 3rem;
   background: transparent;
@@ -714,6 +714,17 @@ Projects
   width: 85%;
   max-width: 30rem;
   margin: 0 auto;
+  color: var(--grey-dark);
+}
+
+.projects-text a {
+  color: var(--clr-white);
+  text-shadow: 1px 1px 2px var(--grey-dark);
+}
+
+.projects-text a:hover {
+  color: var(--primary);
+  transition: var(--transition);
 }
 
 .project {
@@ -735,7 +746,7 @@ Projects
   left: 50%;
   transform: translate(-50%, -50%);
   transition: var(--transition);
-  /* opacity: 0; */
+  text-shadow: 1px 1px 2px var(--grey-dark);
 }
 
 .project-info p {
@@ -753,6 +764,7 @@ Projects
   height: 15rem;
   -o-object-fit: cover;
   object-fit: cover;
+  opacity: 0.9;
 }
 
 .project:hover .project-img {
