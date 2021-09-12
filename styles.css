@@ -648,6 +648,15 @@ Timeline
   margin-bottom: 0;
 }
 
+.timeline .iframe {
+  width: 100%;
+  height: auto;
+}
+
+.timeline-img {
+  margin-top: 1rem;
+}
+
 .timeline-item:nth-child(even) {
   border-left: 2px dashed var(--primary);
   border-top-left-radius: 2rem;
@@ -695,6 +704,24 @@ Timeline
 .timeline-item:nth-child(odd) .number {
   right: 0;
   transform: translate(50%, -50%);
+}
+
+@media screen and (min-width: 568px) {
+  .timeline-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .timeline .iframe {
+    height: 20rem;
+  }
+
+  .timeline-img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /*
