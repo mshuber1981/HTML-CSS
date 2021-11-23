@@ -2,7 +2,7 @@
 
 ![Certificate of completion](/Media/HTML-CSS.jpg)
 
-Web Development for Absolute Beginners.Learn HTML5 and CSS3 from scratch.​ Build Amazing Real World Projects.
+Web Development for Absolute Beginners. Learn HTML5 and CSS3 from scratch.​ Build Amazing Real World Projects.
 
 By <a href="https://github.com/john-smilga">John Smilga</a>
 
